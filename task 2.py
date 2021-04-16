@@ -6,12 +6,14 @@ list.sort()
 print('Sorted list:', list)
 
 name = input("What is your name? ")
+name = name.title()
+print(name)
 
 if name in list:
     print("Oh senpai! that name is already in the list asdahasdhahkshldgakshd uwu")
 else:
     replace = input("would you like to add your name to the list? ")
-    replace.title()
+    replace.lower()
     if replace == "no":
         print("OK stinker")
     elif replace == "yes":
