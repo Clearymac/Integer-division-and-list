@@ -11,9 +11,9 @@ if name in list:
     print("Oh senpai! that name is already in the list asdahasdhahkshldgakshd uwu")
 else:
     replace = input("would you like to add your name to the list? ")
-    replace.lower()
+    replace.title()
     if replace == "no":
         print("OK stinker")
     elif replace == "yes":
-        list += name
+        list.append(name)
         print(list)
